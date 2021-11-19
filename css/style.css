@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Norican&family=Nunito:wght@200;300;400&family=Poppins&display=swap');
+
+.container { max-width: 1110px; margin: auto; padding: 0 10px;}
+
+.clearfix { overflow: auto; }
+
+.whitetxt {	color: #fff}
+
+header {
+	height: 100vh;
+	background: url('../img/headerbg.jpg') center/cover;
+	text-align: center;
+	position: relative;
+	color: #FFF;
+	padding: 20px 0;
+}
+
+
+nav {
+	padding: 60px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul li{ padding: 0 10px; }
+
+nav ul li a {
+	font: 1em Poppins;
+	color: #FFF;
+}
+
+header div {
+	position: absolute;
+	top: 55%;
+	transform: translate(0, -50%);
+	width: 100%;
+	margin: auto;
+}
+
+h1 {
+  font: 100 1.7em Nunito;
+  text-transform: uppercase;
+}
+h2 {
+  font: 2em Norican;
+  color: #FFF;
+  text-align: center;
+}
+h3 {
+	padding: 25px 0;
+	font: 1em Poppins;
+	color: #0b0c0d;
+	text-transform: uppercase;
+}
+h3 span { float: right }
+hr { 
+	width: 100px;
+	border: none;
+	border-top: 2px solid #FFF; 
+}
+hr.vishn { border-top: 2px solid #c8235d }
+header div p {
+	font: .8em/1.8 Poppins;
+	margin: auto;
+}
+main section { padding: 110px 0; }
+#story { background: #962323 }
+#recipes { background: #25262a url('../img/recipesbg.jpg') center/cover }
+#menu { background: #f3f4f7}
+#menu article p {
+	font: 1em/1.2 Poppins;
+	color: #505153;
+	padding: 0 0 10px 0;
+}
+#gallery {
+	width: 100%;
+	overflow: hidden;
+}
+#gallery img {
+	max-width: 100%;
+	margin-top: -5px; 
+}
+
+.sectiontxt {
+	padding: 50px 0;
+	font: 1em/1.8 Poppins;
+	color: #FFF;
+	text-align: center;
+}
+.inktxt { color: #0b0c0d }
+.w50 { width: 100% }
+.w40 { width: 100% }
+
+footer {
+	background-color: #25262a;
+	height: 100vh;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+	padding-top: 50px;
+}
+
+.column {
+	float: left;
+	padding-right: 30px; padding-top: 30px;
+}
+
+.column:first-child {
+		padding-right: 0;
+	}
+	.column:last-child {
+		padding-right: 0;
+	}
+
+#logofooter {padding-bottom: 30px;}
+footer p{
+	font: 0.7em/2 Poppins;
+	width: 250px;
+}
+
+footer h4 { font: 1em Poppins; padding-bottom: 30px; color: #c8235d }
+footer ul li { font: 0.8em Poppins; padding-bottom: 10px; }
+footer i { color: #c8235d; padding-right: 10px; }
+
+
+@media only screen and (min-width: 768px) {
+	h1 { font-size: 4.5em }
+	h2 { font: 3.5em }
+	header div p { font-size: 1em; width: 50% }
+	nav>a { float: left }
+	nav>ul { float: right }
+	nav ul li { display: inline-block;}
+	.w40 { width: 40% }
+	.w50 { width: 50% }
+	.fleft { float: left; }
+	.fright { float: right; }
+	.center { margin: auto; }
+	#menu>div>div { 
+		column-count: 2;
+		column-gap: 15%;
+	}
+	#gallery { white-space: nowrap }
+	#gallery img { display: inline-block; margin: -5px;  }
+	.row {padding-top: 80px;}
+	.column { width: 20%; padding-left: 60px; }
+	.column:first-child { padding-left: 0; }
+	.column:last-child { padding-left: 0; }
+	footer {height: 35vh}
+}
+
+
+
+
+
+
+
+
